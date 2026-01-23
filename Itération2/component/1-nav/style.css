@@ -1,0 +1,52 @@
+/* Mobile  Version */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem 0;
+    border: 0;
+}
+
+.nav__title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav__burger{
+    width: 2rem;
+    transition: ease-in-out 0.1s;
+}
+
+.nav__container{
+    display: none;
+}
+
+/* Desktop Version */
+
+@media(min-width: 40em){
+
+    .nav{
+        justify-content: space-around;
+    }
+    
+    .nav__burger{
+        display: none;
+    }
+    
+    .nav__container{
+        display: flex;
+        gap: 1rem;
+        
+    }
+    
+    .nav__item:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .nav__title:hover{
+        cursor: pointer;
+    }
+
+}

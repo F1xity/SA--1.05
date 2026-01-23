@@ -1,0 +1,20 @@
+@layer variables, reset, base, components;
+
+/* importation des css de base */
+
+@import "./base.css" layer(base);
+@import "./reset.css" layer(reset);
+@import "./variables.css" layer(variables);
+
+/* importation des styles des différents composants */
+
+@import "../component/1-nav/style.css" layer(components);
+@import "../component/2-hero/style.css" layer(components);
+@import "../component/3-client/style.css" layer(components);
+@import "../component/4-content/style.css" layer(components);
+@import "../component/5-sub/style.css" layer(components);
+@import "../component/6-blog/style.css" layer(components);
+@import "../component/7-avis/style.css" layer(components);
+@import "../component/8-help/style.css" layer(components);
+@import "../component/9-faq/style.css" layer(components);
+@import "../component/10-footer/style.css" layer(components);

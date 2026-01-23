@@ -1,0 +1,102 @@
+/* Mobile  Version */
+
+.sub{
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.sub__title{
+    font-size: 2rem;
+}
+
+.sub__texte{
+    margin: 1rem 2rem;
+    color: var(--clr-Dark7);
+}
+
+.sub__plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub__plan1, .sub__plan3{
+    border: 1px solid var(--clr-Light6);
+    border-radius: .5rem;
+    margin: 2rem 0;
+    padding: 3rem 0;
+    width: 25rem;
+}
+.sub__plan2{
+    border: 2px solid var(--clr-green);
+    background-color: var(--clr-green-light);
+    border-radius: .5rem;
+    margin: 2rem 0;
+    padding: 3rem 0;
+    width: 25rem;
+}
+
+.sub__plan__title{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.sub__plan__texte{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 1rem;
+    color: var(--clr-Dark7);
+}
+
+.sub__plan__price{
+    font-weight: 700;
+    color: var(--clr-green);
+    font-size: 3rem;
+}
+
+.sub__plan__amount{
+    color: var(--clr-Dark7);
+}
+
+.sub__plan__btn{
+    background-color: var(--clr-green);
+    color: var(--clr-Light8);
+    font-weight: 500;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+.sub__plan__value{
+    background-color: var(--clr-orange);
+    color: var(--clr-Light8);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+}
+
+/* Desktop Version */
+
+@media(min-width: 80em){
+
+    .sub__plans{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .sub__plan1, .sub__plan2 .sub__plan3{
+        max-width: 30rem;
+    }
+
+    .sub__plan__btn:hover{
+        box-shadow: 0px 0px 20px 5px var(--clr-green);
+        transition: .5s;
+    }
+    
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>V2 itération 2</title>
+        <link rel="stylesheet" href="./css/global.css">
+    </head>
+    <body>
+        <div class="nav" id="nav"></div>
+        <div class="hero" id="hero"></div>
+        <div class="client" id="client"></div>
+        <div class="content" id="content"></div>
+        <div class="sub" id="sub"></div>
+        <div class="blog" id="blog"></div>
+        <div class="avis" id="avis"></div>
+        <div class="help" id="help"></div>
+        <div class="faq" id="faq"></div>
+        <div class="footer" id="footer"></div>
+
+        <script type="module">
+            //Import de Navigation
+            import { Navigation } from "./component/1-nav/app.js";
+            import { NavigationData } from "./data/1-NavigationData.js";
+            Navigation.render("#nav", NavigationData);
+
+            //Import de Hero
+            import { Hero } from "./component/2-hero/app.js";
+            import { HeroData } from "./data/2-HeroData.js";
+            Hero.render("#hero", HeroData[0]);
+            
+            //Import de Client
+            import { Client } from "./component/3-client/app.js";
+            import { ClientData } from "./data/3-ClientData.js";
+            Client.render("#client", ClientData);
+            
+            //Import de Content
+            import { Content } from "./component/4-content/app.js";
+            import { ContentData } from "./data/4-ContentData.js";
+            Content.render("#content", ContentData);
+            
+            //Import de Sub
+            import { Sub } from "./component/5-sub/app.js";
+            import { SubData } from "./data/5-SubData.js";
+            Sub.render("#sub", SubData);
+            
+            //Import de Blog
+            import { Blog } from "./component/6-blog/app.js";
+            import { BlogData } from "./data/6-BlogData.js";
+            Blog.render("#blog", BlogData);
+            
+            //Import de Avis
+            import { Avis } from "./component/7-avis/app.js";
+            import { AvisData } from "./data/7-AvisData.js";
+            Avis.render("#avis", AvisData);
+            
+            //Import de Help
+            import { Help } from "./component/8-help/app.js";
+            import { HelpData } from "./data/8-HelpData.js";
+            Help.render("#help", HelpData);
+            
+            //Import de Faq
+            import { Faq } from "./component/9-faq/app.js";
+            import { FaqData } from "./data/9-FaqData.js";
+            Faq.render("#faq", FaqData);
+            
+            //Import de Footer
+            import { Footer } from "./component/10-footer/app.js";
+            import { FooterData } from "./data/10-FooterData.js";
+            Footer.render("#footer", FooterData);
+        </script>
+    </body>
+</html>

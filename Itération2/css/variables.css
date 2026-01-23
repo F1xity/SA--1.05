@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    /* Couleurs */
+    --clr-Dark1: #000000;
+    --clr-Dark2: #0B0D17;
+    --clr-Dark3: #111111;
+    --clr-Dark4: #333333;
+    --clr-Dark5: #444444;
+    --clr-Dark6: #555555;
+    --clr-Dark7: #666666;
+    --clr-Dark8: #999999;
+
+    --clr-Light1: #AAAAAA;
+    --clr-Light2: #CCCCCC;
+    --clr-Light3: #E0E0E0;
+    --clr-Light4: #F1F5F9;
+    --clr-Light5: #F9F9F9;
+    --clr-Light6: #E2E8F0;
+    --clr-Light7: #FDFDFD;
+    --clr-Light8: #FFFFFF;
+
+    --clr-green-dark: #009688;
+    --clr-green: #00BFA6;
+    --clr-green-light: #cbffea;
+
+    --clr-orange: #FF9800;
+    --clr-yellow: #FFC107;
+
+    --clr-blue-dark: #0B0D17;
+    --clr-blue: #e2f8fd;
+    --clr-blue-light: #ffffff;
+
+    --ff-sans: "Poppins", sans-serif;
+}

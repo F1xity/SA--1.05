@@ -1,0 +1,42 @@
+/* Mobile  Version */
+
+.client{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.client__title{
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+.client__subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: var(--clr-Dark6);
+}
+
+.client__name{
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+    width: 100%;
+    flex-wrap:wrap;
+}
+
+.client__name__img{
+    margin: 1rem 2rem; 
+}
+
+/* Desktop Version */
+
+@media(min-width: 40em){
+    .client__name__img{
+        margin: 1rem 1.5rem; 
+        width: 5rem;
+    }
+}
