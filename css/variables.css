@@ -1,0 +1,19 @@
+:root{
+    --clr-light: #fff;
+    --clr-gray1: #4e4e4e;
+    --clr-gray2: #e6e6e6;
+    --clr-gray3: #4e4e4e;
+    --clr-gray4: #a1a1a1;
+    --clr-dark: #000;
+
+    --clr-blue-light: #d7f2ff;
+    --clr-blue: #a0defd;
+    --clr-blue-dark: #007ab8;
+
+    --clr-orange: #D87D4A;
+    --clr-pink: #DB4D9A;
+
+    --locaux-padding: 4rem 1.5rem;
+
+    --ff-sans: "DM sans", sans-serif;
+}

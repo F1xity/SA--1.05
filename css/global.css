@@ -1,0 +1,32 @@
+@layer variables, reset, base, components;
+
+/* Imports des css de base */
+
+@import "./base.css" layer(base);
+@import "./reset.css" layer(reset);
+@import "./variables.css" layer(variables);
+
+/* Imports des css de chaque composants */
+
+@import "../components/1-Nav/style.css" layer(components);
+@import "../components/2-Cible/style.css" layer(components);
+@import "../components/3-Cta/style.css" layer(components);
+@import "../components/4-Locaux/style.css" layer(components);
+@import "../components/5-Equipes/style.css" layer(components);
+@import "../components/6-Avantages/style.css" layer(components);
+@import "../components/7-Offres/style.css" layer(components);
+@import "../components/8-Avis/style.css" layer(components);
+@import "../components/9-Blog/style.css" layer(components);
+@import "../components/10-Help/style.css" layer(components);
+@import "../components/11-Faq/style.css" layer(components);
+@import "../components/12-Fondateur/style.css" layer(components);
+@import "../components/13-Social/style.css" layer(components);
+@import "../components/14-Newsletter/style.css" layer(components);
+@import "../components/15-Footer/style.css" layer(components);
+
+@import "../components/1-Navigation/style.css" layer(components);
+@import "../components/2-Preview/style.css" layer(components);
+@import "../components/3-Buy/style.css" layer(components);
+@import "../components/4-See/style.css" layer(components);
+@import "../components/5-Bio/style.css" layer(components);
+@import "../components/6-Footer/style.css" layer(components);
