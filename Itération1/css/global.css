@@ -1,0 +1,28 @@
+/*
+  @layer (Cascade Layers) - Permet de contrôler l'ordre de priorité des styles CSS.
+
+  Fonctionnement :
+  - Les layers déclarés en premier ont MOINS de priorité que ceux déclarés après.
+  - Ici l'ordre de priorité est : reset < variables < components < utilities
+  - Cela signifie que les styles dans "utilities" l'emportent sur ceux de "components",
+    qui eux-mêmes l'emportent sur "variables", etc.
+
+  Avantages :
+  - Évite les conflits de spécificité CSS
+  - Organise le code de manière logique et prévisible
+  - Permet d'importer des fichiers CSS dans des layers spécifiques avec layer()
+*/
+
+@layer variables, reset, base, components, utilities;
+
+@import "./variables.css" layer(variables);
+@import "./reset.css" layer(reset);
+@import "./base.css" layer(base);
+/* @import "./utilities.css" layer(utilities); */
+
+@import "../component/Navigation/style.css" layer(components);
+@import "../component/Hero/style.css" layer(components);
+@import "../component/Features/style.css" layer(components);
+@import "../component/Contact/style.css" layer(components);
+@import "../component/News/style.css" layer(components);
+@import "../component/Footer/style.css" layer(components);

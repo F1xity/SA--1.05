@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Cloës Itération 3</title>
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    <section class="nav" id="nav"></section>
+    <section class="preview" id="preview"></section>
+    <section class="buy" id="buy"></section>
+    <section class="see" id="see"></section>
+    <section class="bio" id="bio"></section>
+    <section class="footer" id="footer"></section>
+    
+
+    <script type="module">
+        //Import de Navigation
+            import { Navigation } from "./components/1-Navigation/app.js";
+            import { NavigationData } from "./data/Audiophile/1-NavigationData.js";
+            Navigation.render("#nav", NavigationData);
+
+        //Import de Preview
+            import { Preview } from "./components/2-Preview/app.js";
+            import { PreviewData } from "./data/Audiophile/2-PreviewData.js";
+            Preview.render("#preview", PreviewData);
+
+        //Import de Buy
+            import { Buy } from "./components/3-Buy/app.js";
+            import { BuyData } from "./data/Audiophile/3-BuyData.js";
+            Buy.render("#buy", BuyData.items);
+
+        //Import de See
+            import { See } from "./components/4-See/app.js";
+            import { SeeData } from "./data/Audiophile/4-SeeData.js";
+            See.render("#see", SeeData.items);
+
+        //Import de Bio
+            import { Bio } from "./components/5-Bio/app.js";
+            import { BioData } from "./data/Audiophile/5-BioData.js";
+            Bio.render("#bio", BioData);
+
+        //Import de Footer
+            import { Footer } from "./components/6-Footer/app.js";
+            import { FooterData } from "./data/Audiophile/6-FooterData.js";
+            Footer.render("#footer", FooterData);
+    </script>
+
+</body>
+</html>

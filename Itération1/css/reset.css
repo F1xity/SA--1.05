@@ -1,0 +1,10 @@
+/* Ceci est une réinitialisation des styles de base à vous de le compléter */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}

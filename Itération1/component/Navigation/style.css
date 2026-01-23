@@ -1,0 +1,77 @@
+/*CSS - Mobile version*/
+
+.nav{
+    padding:2rem;
+    font-family: var(--ff-sans);
+    color:var(--fg-nav);
+    background-color: var(--bg-nav);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
+.nav__list{
+    list-style: none;
+    font-size: 0.5rem;
+}
+
+.nav__title{
+    text-align: center;
+    font-weight: 1000;
+    font-size: 0.75rem;
+}
+.nav__button{
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.9rem;
+    list-style: none;
+    font-size: 0.5rem;
+    background-color: var(--clr-rose);
+}
+
+.nav__part1{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.nav__part2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+
+/*CSS - Desktop version*/
+
+@media(min-width:40rem){
+    .nav__list,.nav__button{
+        font-size: 0.75rem;
+    }
+
+    .nav__title{
+        font-weight: 1000;
+        font-size: 1.5rem;
+    }
+    .nav__button{
+        padding: 0.5rem 1rem;  /* 1er haut/bas 2e gauche/droite */
+        border-radius: 0.9rem;
+    }
+
+    .nav__part1{
+        gap: 1.5rem;
+    }
+    .nav__part2{
+        gap: 1.5rem;
+    }
+}

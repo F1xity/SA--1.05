@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUB SAÉ-105 Quentin Cloës</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            gap: 2rem;
+        }
+
+        
+        nav {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 1.5rem;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        
+        .site-card {
+            display: flex;
+            flex-direction: column;
+            width: 15rem;
+            background-color: white;
+            text-decoration: none; 
+            border-radius: .75rem;
+            overflow: hidden; 
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        
+        .site-card img {
+            width: 100%;
+            height: 8rem;
+            object-fit: cover; 
+            border-bottom: 1px solid #eee;
+        }
+
+        
+        .site-card span {
+            padding: 1rem;
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        
+        
+        .site-card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            transform: translateY(-5px); 
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>HUB SAÉ-105 Quentin Cloës</h1>
+    <nav>
+        <a href="./Itération1/index.html" class="site-card">
+            <img src="./Itération1/assets/itération1.png" alt="Error">
+            <span>Itération 1</span>
+        </a>
+
+        <a href="./Itération2/index.html" class="site-card">
+            <img src="./Itération2/L.png" alt="Error">
+            <span>Itération 2</span>
+        </a>
+
+        <a href="./audiophile.html" class="site-card">
+            <img src="./assets/Audiophile/audiophile-L.png" alt="Error">
+            <span>Itération 3-Audiophile</span>
+        </a>
+
+        <a href="./bonbonbon.html" class="site-card">
+            <img src="./assets/BonBonbon/bonBonbon_L.png" alt="Error">
+            <span>Itération 3-BonBonbon</span>
+        </a>
+
+        <a href="./fixicorp.html" class="site-card">
+            <img src="./assets/Fixicorp/itération4.png" alt="Error">
+            <span>Itération 4</span>
+        </a>
+    </nav>
+
+</body>
+</html>

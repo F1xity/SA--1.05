@@ -1,0 +1,88 @@
+/*CSS - Mobile version*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    background-color: var(--bg-nav);
+    gap: 2rem;
+}
+
+.news__regi{
+    font-size: 0.8rem;
+}
+
+.news__text{
+    font-size: 0.6rem;
+    padding: 1rem 0;
+}
+
+.news__email{
+    padding: 0.5rem;
+    border: 0;
+    color: white;
+    background: none;
+    box-shadow: 0px 0px 3px 0px #888888;
+    border-radius: 0.9rem;
+    font-size: 0.7rem;
+}
+
+.news__sign{
+    padding: 0.4rem 1rem;
+    border-radius: 0.9rem;
+    color: white;
+    font-size: 0.7rem;
+    background-color: var(--clr-vert);
+}
+
+.news__bottom{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+
+.foot__title{
+    padding-bottom: 1.5rem;
+}
+
+.foot__bottom{
+    font-size: 0.8rem;
+    list-style: none;
+}
+
+.footer__more{
+    text-align: center;
+}
+
+.more__btn{
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.9rem;
+    list-style: none;
+    font-size: 1rem;
+    background-color: var(--clr-rose);
+}
+/*CSS - Desktop version*/
+
+@media(min-width:40rem){
+    .footer{
+        flex-direction: row;
+        align-items: start;
+        text-align: inherit;
+        justify-content: space-around;
+    }
+
+    .more__btn{
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .more__text{
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap");
+
+:root {
+  --clr-dark: #0c0622;
+  --clr-light: #ffffff;
+
+  --fg-nav: #ffffff;
+  --bg-nav: rgb(47, 24, 147);
+
+  --clr-rose:#E93A7D;
+  --clr-vert:#25DAC5;
+
+  --ff-sans: "DM sans", sans-serif;
+
+}

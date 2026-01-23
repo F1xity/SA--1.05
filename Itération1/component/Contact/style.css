@@ -1,0 +1,48 @@
+/*CSS - Mobile version*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: url(../../assets/googlemap.png);
+    color: white;
+}
+
+.contact__bg{
+    background-color: rgba(47, 24, 147,0.8);
+    padding: 1rem;
+}
+
+.contact__title{
+    color:var(--clr-rose);
+}
+
+.contact__name{
+    padding-top: 1.5rem;
+    font-size: 0.6rem;
+}
+
+.contact__text{
+    padding-top: 0.5rem;
+    font-weight: 1000;
+}
+
+.social__img img{
+    padding-top: 0.5rem;
+    width: 1rem;
+    margin: 0 0.75rem;
+}
+/*CSS - Desktop version*/
+
+@media(min-width:40rem){
+    .contact__bg{
+        padding-top: 3rem;
+    }
+
+    .contact__name{
+        font-size: 0.8rem;
+    }
+
+    .contact__text{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Cloës Final SAÉ 1.05</title>
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    
+    <section class="Nav" id="Nav"></section>
+    <section class="Cible" id="Cible"></section>
+    <section class="Cta" id="Cta"></section>
+    <section class="Locaux" id="Locaux"></section>
+    <section class="Equipes" id="Equipes"></section>
+    <section class="Avantages" id="Avantages"></section>
+    <section class="Offres" id="Offres"></section>
+    <section class="Avis" id="Avis"></section>
+    <section class="Blog" id="Blog"></section>
+    <section class="Help" id="Help"></section>
+    <section class="Faq" id="Faq"></section>
+    <section class="Fondateur" id="Fondateur"></section>
+    <section class="Social" id="Social"></section>
+    <section class="Newsletter" id="Newsletter"></section>
+    <section class="Footer" id="Footer"></section>
+    
+    <script type="module">
+        import { Nav } from "./components/1-Nav/app.js";
+        import { NavData } from "./data/Fixicorp/1-NavData.js";
+        Nav.render("#Nav", NavData);
+        
+        import { Cible } from "./components/2-Cible/app.js";
+        import { CibleData } from "./data/Fixicorp/2-CibleData.js";
+        Cible.render("#Cible", CibleData);
+        
+        import { Cta } from "./components/3-Cta/app.js";
+        import { CtaData } from "./data/Fixicorp/3-CtaData.js";
+        Cta.render("#Cta", CtaData);
+        
+        import { Locaux } from "./components/4-Locaux/app.js";
+        import { LocauxData } from "./data/Fixicorp/4-LocauxData.js";
+        Locaux.render("#Locaux", LocauxData);
+
+        import { Equipes } from "./components/5-Equipes/app.js";
+        import { EquipesData } from "./data/Fixicorp/5-EquipesData.js";
+        Equipes.render("#Equipes", EquipesData);
+        
+        import { Avantages } from "./components/6-Avantages/app.js";
+        import { AvantagesData } from "./data/Fixicorp/6-AvantagesData.js";
+        Avantages.render("#Avantages", AvantagesData);
+        
+        import { Offres } from "./components/7-Offres/app.js";
+        import { OffresData } from "./data/Fixicorp/7-OffresData.js";
+        Offres.render("#Offres", OffresData);
+        
+        import { Avis } from "./components/8-Avis/app.js";
+        import { AvisData } from "./data/Fixicorp/8-AvisData.js";
+        Avis.render("#Avis", AvisData);
+        
+        import { Blog } from "./components/9-Blog/app.js";
+        import { BlogData } from "./data/Fixicorp/9-BlogData.js";
+        Blog.render("#Blog", BlogData);
+        
+        import { Help } from "./components/10-Help/app.js";
+        import { HelpData } from "./data/Fixicorp/10-HelpData.js";
+        Help.render("#Help", HelpData);
+        
+        import { Faq } from "./components/11-Faq/app.js";
+        import { FaqData } from "./data/Fixicorp/11-FaqData.js";
+        Faq.render("#Faq", FaqData);
+        
+        import { Fondateur } from "./components/12-Fondateur/app.js";
+        import { FondateurData } from "./data/Fixicorp/12-FondateurData.js";
+        Fondateur.render("#Fondateur", FondateurData);
+        
+        import { Social } from "./components/13-Social/app.js";
+        import { SocialData } from "./data/Fixicorp/13-SocialData.js";
+        Social.render("#Social", SocialData);
+        
+        import { Newsletter } from "./components/14-Newsletter/app.js";
+        import { NewsletterData } from "./data/Fixicorp/14-NewsletterData.js";
+        Newsletter.render("#Newsletter", NewsletterData);
+        
+        import { Footer } from "./components/15-Footer/app.js";
+        import { FooterData } from "./data/Fixicorp/15-FooterData.js";
+        Footer.render("#Footer", FooterData);
+    </script>
+</body>
+</html>
