@@ -1,0 +1,88 @@
+.social-section {
+    --social-bg: var(--clr-light);
+    --social-card-bg: var(--clr-blue-light);
+    --social-accent: var(--clr-blue-dark);
+    
+    padding: 5rem 1.5rem;
+    background-color: var(--social-bg);
+    text-align: center;
+}
+
+.social-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--clr-dark);
+}
+
+.social-subtitle {
+    color: var(--clr-gray);
+    margin-bottom: 3.5rem;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.social-flex {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    background: var(--social-card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    background: var(--clr-light);
+    border-color: var(--social-accent);
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.social-info {
+    text-align: left;
+}
+
+.social-name {
+    display: block;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.3rem;
+    color: var(--social-accent);
+}
+
+.social-handle {
+    color: var(--clr-gray-dark);
+    font-size: 0.9rem;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .social-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-card {
+        width: calc(50% - 1rem); /* 2 colonnes sur tablette */
+    }
+}
+
+@media (min-width: 64em) {
+    .social-card {
+        width: calc(25% - 1.2rem); /* 4 colonnes sur grand écran */
+    }
+}

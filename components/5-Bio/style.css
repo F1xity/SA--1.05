@@ -1,0 +1,35 @@
+.bio-container {
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.bio-image img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.bio-text h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.bio-text span { 
+    --_clr-text: var(--clr-text);
+    color: var(--_clr-text); 
+}
+
+.bio-text p { opacity: 0.5; }
+
+@media (min-width: 40em) {
+    .bio-container {
+        flex-direction: row;
+        align-items: center;
+        padding: 6rem 10%;
+        text-align: left;
+    }
+    .bio-text, .bio-image { flex: 1; }
+}

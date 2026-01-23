@@ -1,0 +1,233 @@
+
+.see {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+
+.see__item {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.see__content {
+    --_clr-text: var(--clr-text);
+    color: var(--_clr-text);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.see__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.see__texte {
+    font-weight: 300;
+    opacity: 0.75;
+    line-height: 1.6;
+}
+
+
+.see__btn {
+    border: 1px solid var(--clr-text);
+    background: transparent;
+    color: var(--_clr-text);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.see__btn:hover {
+    background: black;
+    color: white;
+}
+
+
+.see__item--zx9 {
+    background-color: var(--clr-orange); 
+    background-image: url("../../assets/Audiophile/icones/circle-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: center -8rem;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    padding: 3rem 1.5rem;
+}
+
+.see__item--sucette {
+    background-color: var(--clr-pink); 
+    background-image: url("../../assets/BonBonbon/icones/circle-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: center -8rem;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    padding: 3rem 1.5rem;
+}
+
+.see__item--zx9 .see__content, 
+.see__item--sucette .see__content {
+    align-items: center;
+}
+
+.see__item--zx9 .see__img, 
+.see__item--sucette .see__img {
+    width: 170px;
+    margin-bottom: 1rem;
+}
+
+.see__item--zx9 .see__btn, 
+.see__item--sucette .see__btn{
+    --_clr-btn: var(--clr-btn);
+    background-color: var(--_clr-btn);
+    color: white;
+    border-color: black;
+}
+.see__item--zx9 .see__btn:hover, 
+.see__item--sucette .see__btn:hover {
+    background-color: #4c4c4c; 
+}
+
+
+.see__item--zx7, 
+.see__item--macaron {
+    background-color: #F1F1F1;
+    min-height: 20rem;
+    justify-content: center;
+}
+
+
+.see__item--zx7 .see__visual, 
+.see__item--macaron .see__visual {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 0;
+}
+
+.see__item--zx7 .see__img, 
+.see__item--macaron .see__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.see__item--zx7 .see__content, 
+.see__item--macaron .see__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.see__item--zx7 .see__texte, 
+.see__item--macaron .see__texte,
+.see__item--bonbons .see__texte,
+.see__item--yx1 .see__texte {
+    display: none; 
+}
+
+.see__item--yx1, .see__item--bonbons {
+    gap: 1.5rem;
+}
+
+.see__item--yx1 .see__visual,
+.see__bonbons .see__visual,
+.see__item--yx1 .see__content,
+.see__bonbons .see__content {
+    border-radius: .5rem;
+    flex: 1;
+}
+
+.see__item--yx1 .see__visual,
+.see__bonbons .see__visual {
+    height: 12rem;
+    overflow: hidden;
+}
+
+.see__item--bonbons .see__img,
+.see__item--yx1 .see__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.see__item--bonbons .see__content,
+.see__item--yx1 .see__content {
+    background-color: #F1F1F1;
+    padding: 2.5rem;
+}
+
+
+
+@media (min-width: 64em) {
+    .see { padding: 0 10% 4rem 10%; }
+
+    .see__item--zx9, .see__item--sucette {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        padding: 0;
+        overflow: hidden; 
+        height: 35rem;
+    }
+    
+    .see__item--zx9 .see__visual,
+    .see__item--sucette .see__visual {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+        height: 100%;
+        transform: translateY(10px); 
+    }
+
+    .see__item--zx9 .see__img,
+    .see__item--sucette .see__img {
+        width: 25rem; 
+        margin-bottom: -10px;
+    }
+
+    .see__item--zx9 .see__content,
+    .see__item--sucette .see__content {
+        flex: 1;
+        align-items: flex-start;
+        padding-right: 4rem;
+    }
+    
+    .see__item--zx9 .see__title, 
+    .see__item--sucette .see__title { 
+        font-size: 3.5rem; 
+    }
+
+    
+    .see__item--zx7, .see__item--macaron {
+        padding-left: 4rem; 
+    }
+
+    
+    .see__item--yx1, .see__item--bonbons {
+        flex-direction: row;
+        height: 20rem;
+    }
+    
+    .see__item--bonbons .see__visual,
+    .see__item--yx1 .see__visual {
+        height: auto;
+    }
+}

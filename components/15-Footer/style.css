@@ -1,0 +1,84 @@
+.footer-section {
+    --footer-bg: var(--clr-light);
+    --footer-text: var(--clr-dark);
+    --footer-accent: var(--clr-blue);
+    
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 5rem 1.5rem 2rem;
+}
+
+.footer-container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.footer-logo {
+    color: var(--footer-accent);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    max-width: 20rem;
+    line-height: 1.6;
+    color: var(--clr-gray3);
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-col h3 {
+    color: var(--clr-dark);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: var(--footer-accent);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--clr-gray4);
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--clr-gray4);
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-grid {
+        flex-direction: row;
+        gap: 5rem;
+    }
+}

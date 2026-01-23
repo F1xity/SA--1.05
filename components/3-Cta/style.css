@@ -1,0 +1,87 @@
+.cta-section {
+    position: relative;
+    padding: 8rem 1.5rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Effet parallaxe léger */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--clr-light);
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Assombrit l'image pour la lisibilité */
+    z-index: 1;
+}
+
+.cta-container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.cta-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.cta-desc {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-main, .btn-alt {
+    padding: 1.2rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.2rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-main {
+    background-color: var(--clr-blue);
+    color: var(--clr-dark);
+}
+
+.btn-alt {
+    background-color: transparent;
+    color: var(--clr-light);
+    border: 2px solid var(--clr-light);
+}
+
+.btn-main:hover, .btn-alt:hover {
+    transform: scale(1.05);
+}
+
+.btn-main:hover {
+    background-color: var(--clr-light);
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .cta-buttons {
+        flex-direction: row;
+    }
+
+    .cta-title {
+        font-size: 4.5rem;
+    }
+}

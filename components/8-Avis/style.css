@@ -1,0 +1,93 @@
+.avis-section {
+    --avis-bg: var(--clr-blue-light);
+    --avis-card-bg: var(--clr-light);
+    --avis-star-clr: #ffcc00; /* Jaune or pour les étoiles */
+    
+    padding: 4rem 1.5rem;
+    background-color: var(--avis-bg);
+    text-align: center;
+}
+
+.avis-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    color: var(--clr-dark);
+    margin-bottom: 3rem;
+}
+
+.avis-flex {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.avis-card {
+    background: var(--avis-card-bg);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.avis-card:hover {
+    transform: translateY(-5px);
+}
+
+.avis-stars {
+    color: var(--avis-star-clr);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.avis-comment {
+    font-style: italic;
+    color: var(--clr-gray-dark);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.avis-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid var(--clr-blue-light);
+    padding-top: 1rem;
+}
+
+.avis-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avis-name {
+    font-family: 'Lilita One', cursive;
+    color: var(--clr-blue-dark);
+    margin: 0;
+}
+
+.avis-role {
+    font-size: 0.85rem;
+    color: var(--clr-gray);
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .avis-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .avis-card {
+        width: calc(33.333% - 1.5rem);
+        flex: 0 0 calc(33.333% - 1.5rem);
+    }
+}

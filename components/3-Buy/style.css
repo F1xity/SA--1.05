@@ -1,0 +1,53 @@
+.buy {
+    padding: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.buy__container {
+    background-color: var(--clr-gray2);
+    border-radius: 8px;
+    padding: 0 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.buy__img {
+    /* --_clr-shadow: var(--clr-shadow);
+    box-shadow: var(--_clr-shadow) 0px 10px 20px -20px; je n'arrive pas a faire l'effet demandé donc je l'enlève */
+    width: 150px;
+    margin-top: -3rem;
+}
+
+.buy__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.buy__btn {
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.buy__fleche{
+    margin-top: 0;
+    height: auto;
+    width: .8rem;
+}
+
+@media (min-width: 40em) {
+    .buy {
+        flex-direction: row;
+        padding: 8rem 10%;
+    }
+    .buy__container { flex: 1; }
+}

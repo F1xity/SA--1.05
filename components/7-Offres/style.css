@@ -1,0 +1,107 @@
+.offres-section {
+    --offres-bg: var(--clr-light);
+    --offres-card-bg: var(--clr-light);
+    --offres-accent: var(--clr-blue-dark);
+    
+    padding: 4rem 1.5rem;
+    background-color: var(--offres-bg);
+    text-align: center;
+}
+
+.offres-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    color: var(--clr-dark);
+    margin-bottom: 1rem;
+}
+
+.offres-subtitle {
+    color: var(--clr-gray);
+    margin-bottom: 3rem;
+}
+
+.offres-flex {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.offres-card {
+    background: var(--offres-card-bg);
+    border: 2px solid var(--clr-blue-light);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+/* Style pour l'offre mise en avant */
+.offres-card.featured {
+    border-color: var(--offres-accent);
+    background-color: var(--clr-blue-light);
+    transform: scale(1.05);
+}
+
+.offres-name {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.8rem;
+    color: var(--offres-accent);
+    margin-bottom: 1rem;
+}
+
+.offres-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.offres-price span {
+    font-size: 1rem;
+    color: var(--clr-gray);
+}
+
+.offres-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2.5rem;
+    flex-grow: 1; /* Pousse le bouton vers le bas */
+}
+
+.offres-features li {
+    margin-bottom: 0.8rem;
+    color: var(--clr-gray-dark);
+}
+
+.offres-btn {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.offres-btn:hover {
+    background-color: var(--offres-accent);
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .offres-flex {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch; /* Pour que toutes les cartes aient la même hauteur */
+    }
+
+    .offres-card {
+        flex: 1;
+    }
+}

@@ -1,0 +1,119 @@
+.blog-section {
+    --blog-bg: var(--clr-light);
+    --blog-accent: var(--clr-blue);
+    --blog-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    
+    padding: 4rem 1.5rem;
+    background-color: var(--blog-bg);
+}
+
+.blog-main-title {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.blog-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--blog-shadow);
+    width: 100%;
+    max-width: 400px; /* Légère réduction pour tenir à 3 */
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-image-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px; /* Image arrondie à l'intérieur de la card */
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--clr-gray);
+}
+
+.blog-author {
+    color: var(--blog-accent);
+    font-weight: bold;
+}
+
+.blog-badge {
+    background-color: var(--blog-accent);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.blog-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--clr-dark);
+    font-weight: 800; /* Très gras comme sur l'image */
+}
+
+.blog-desc {
+    color: var(--clr-gray-dark);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.blog-link {
+    color: var(--blog-accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .blog-flex {
+        flex-direction: row;
+    }
+
+    .blog-card {
+        /* Calcul pour 2 colonnes moins le gap */
+        width: calc(50% - 1.25rem);
+        flex: 0 0 calc(50% - 1.25rem);
+    }
+}
+@media (min-width: 64em) {
+    .blog-card {
+        /* Calcul pour 3 colonnes moins le gap */
+        width: calc(33.333% - 1.7rem);
+        flex: 0 0 calc(33.333% - 1.7rem);
+    }
+}

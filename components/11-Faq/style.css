@@ -1,0 +1,59 @@
+.faq-section {
+    --faq-bg: var(--clr-light);
+    --faq-accent: var(--clr-blue-dark);
+    --faq-border: var(--clr-blue-light);
+    
+    padding: 5rem 1.5rem;
+    background-color: var(--faq-bg);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-main-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--clr-dark);
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--faq-border);
+}
+
+.faq-details {
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.2rem;
+    color: var(--faq-accent);
+    list-style: none; /* Enlève la flèche par défaut sur certains navigateurs */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ajout d'une flèche personnalisée */
+.faq-question::after {
+    content: "＋";
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.faq-details[open] .faq-question::after {
+    transform: rotate(45deg);
+    content: "＋";
+}
+
+.faq-answer {
+    padding: 1rem 0;
+    line-height: 1.6;
+    color: var(--clr-gray-dark);
+}

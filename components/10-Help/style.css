@@ -1,0 +1,82 @@
+.help-section {
+    --help-bg: var(--clr-blue-light);
+    --help-card-bg: var(--clr-light);
+    --help-accent: var(--clr-blue-dark);
+    
+    padding: 5rem 1.5rem;
+    background-color: var(--help-bg);
+    text-align: center;
+}
+
+.help-main-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    color: var(--clr-dark);
+    margin-bottom: 1rem;
+}
+
+.help-subtitle {
+    color: var(--clr-gray-dark);
+    margin-bottom: 4rem;
+}
+
+.help-flex {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.help-card {
+    background: var(--help-card-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.help-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.help-title {
+    font-family: 'Lilita One', cursive;
+    color: var(--help-accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.help-desc {
+    color: var(--clr-gray-dark);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.help-btn {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: auto; /* Aligne les boutons en bas */
+}
+
+.help-btn:hover {
+    background-color: var(--help-accent);
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .help-flex {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}

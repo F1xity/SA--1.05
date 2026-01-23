@@ -1,0 +1,80 @@
+.cible-section {
+    --cible-bg: var(--clr-light);
+    --cible-card-bg: var(--clr-blue-light);
+    --cible-accent: var(--clr-blue-dark);
+    
+    padding: 5rem 1.5rem;
+    background-color: var(--cible-bg);
+}
+
+.cible-main-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cible-subtitle {
+    text-align: center;
+    color: var(--clr-gray);
+    margin-bottom: 4rem;
+}
+
+.cible-flex {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cible-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--cible-card-bg);
+    padding: 2rem;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.cible-card:hover {
+    transform: scale(1.02);
+    background: var(--clr-blue);
+}
+
+.cible-emoji {
+    font-size: 3rem;
+    background: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.cible-text h3 {
+    font-family: 'Lilita One', cursive;
+    color: var(--cible-accent);
+    margin-bottom: 0.5rem;
+}
+
+.cible-text p {
+    color: var(--clr-gray-dark);
+    line-height: 1.4;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .cible-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cible-card {
+        width: calc(50% - 1rem); /* Deux colonnes */
+    }
+}

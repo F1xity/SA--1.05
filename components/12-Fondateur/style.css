@@ -1,0 +1,91 @@
+.fondateur-section {
+    --fondateur-bg: var(--clr-light);
+    --fondateur-accent: var(--clr-blue-dark);
+    
+    padding: 5rem 1.5rem;
+    background-color: var(--fondateur-bg);
+}
+
+.fondateur-flex {
+    display: flex;
+    flex-direction: column; /* Mobile first */
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.fondateur-image {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+}
+
+.fondateur-image img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 20px 20px 0px var(--clr-blue-light);
+}
+
+.fondateur-content {
+    flex: 1;
+}
+
+.fondateur-main-title {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.2rem;
+    color: var(--clr-gray);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.fondateur-name {
+    font-family: 'Lilita One', cursive;
+    font-size: 3rem;
+    color: var(--fondateur-accent);
+    margin-bottom: 0.5rem;
+}
+
+.fondateur-role {
+    display: block;
+    font-weight: bold;
+    color: var(--clr-gray-dark);
+    margin-bottom: 1.5rem;
+}
+
+.fondateur-bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--clr-gray-dark);
+}
+
+.fondateur-quote {
+    font-style: italic;
+    border-left: 4px solid var(--clr-blue);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--clr-dark);
+}
+
+.fondateur-link {
+    margin-right: 1.5rem;
+    color: var(--fondateur-accent);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.fondateur-link:hover {
+    border-bottom: 2px solid var(--fondateur-accent);
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .fondateur-flex {
+        flex-direction: row;
+        text-align: left;
+    }
+}

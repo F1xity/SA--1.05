@@ -1,0 +1,60 @@
+/* MOBILE FIRST */
+.navbar {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.8rem;
+    color: var(--clr-blue);
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: none; /* Masqué sur mobile par défaut pour un burger */
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-item a {
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--clr-blue);
+}
+
+.burger-menu {
+    background: none;
+    border: none;
+    color: var(--clr-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 40em) {
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+}
